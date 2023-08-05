@@ -51,7 +51,7 @@ export default function RuhHalleri() {
   const stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: ruhHali === "mutlu" ? 'royalblue':'crimson' /* ADIM 2 */
+    color: ruhHali == "Oldukça mutlu :)" ? 'royalblue':'crimson' /* ADIM 2 */
   };
 
   return (
