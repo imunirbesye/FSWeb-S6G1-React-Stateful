@@ -67,7 +67,7 @@ export default function Programcilar() {
           )
         }
       </div>
-      <div id='featured' style={stil}>
+      <div id='featured' style={stil}>              
         {
           // Üçlüler, bir şeyin "gerçekliğine" bağlı olarak "bir şeyi veya diğerini" ifade etmek için harikadır..
           // Sözde-kod: öne çıkan true ise metin 1'i oluşturun, aksi takdirde metin 2'yi oluşturun..

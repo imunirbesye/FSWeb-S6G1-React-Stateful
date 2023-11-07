@@ -18,7 +18,7 @@ import React, {useState} from 'react';
 
 
 //Bu değişkeni YALNIZCA bir durum dilimini yüklemek için kullanın!
-const KareIdListesi = ['sqA', 'sqB', 'sqC', 'sqD', 'sqE', 'sqF'];
+const KareIdListesi = ['sqA', 'sqB', 'sqC', 'sqD'];
 
 
 
@@ -27,7 +27,7 @@ export default function Kareler() {
   // 'aktifKare' olmak üzere. Birisi kare idlerini _dizi_ olarak tutacak, diğeri ise aktif olan
   // kareyi gözlemleyecek. Sayfa yüklendiğinde aktif kare olmayacak,
   // yani  'aktifKare' null olmalı.
-  const [aktifKare, setAktifKare] = useState();
+  const [aktifKare, setAktifKare] = useState(null);
   const [kareler, setKareler] = useState(KareIdListesi);
 	
   const ClassAdiAl = id => {
@@ -46,7 +46,7 @@ export default function Kareler() {
     // id bağımsız değişkenini, stateteki aktif id olacak şekilde ayarlayın
     // eğer zaten aktifse, o zaman önce state i resetlemeliyiz.
     if(aktifKare === id)
-      setAktifKare('');
+      setAktifKare(null);
     else setAktifKare(id);
   };
 
